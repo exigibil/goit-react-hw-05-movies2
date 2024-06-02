@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchMovie from '../Movies/SearchMovie';
 import { useLocation, useNavigate } from "react-router-dom";
-import BackButton from '../BackButton/BackButton'; 
+
 
 const Movies = () => {
   const [searchQuery, setSearchQuery] = useState('');

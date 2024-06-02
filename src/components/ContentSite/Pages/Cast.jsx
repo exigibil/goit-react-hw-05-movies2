@@ -24,7 +24,7 @@ function CastMovie({ movieId }) {
     };
 
     fetchCast();
-  }, [movieId]);
+  }, [movieId, apiKey, URL]);
 
   return (
     <>
