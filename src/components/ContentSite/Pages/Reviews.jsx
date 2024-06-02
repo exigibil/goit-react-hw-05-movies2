@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { API_KEY, baseURL } from '../../API/apikey';
 import PropTypes from 'prop-types';
+import styles from '../MovieDetails/MovieDetails.module.css'
 
 function Reviews({ movieId }) {
   const [reviews, setReviews] = useState([]);
@@ -45,13 +46,13 @@ function Reviews({ movieId }) {
   }
 
   return (
-    <div>
+    <div className={styles.castContainer}>
       <h2>Reviews</h2>
       <ul>
         {reviews.map((review) => (
           <li key={review.id}>
             <p><b>Author: {review.author}</b></p>
-            <p>{review.content}</p>
+            <span>{review.content}</span>
           </li>
         ))}
       </ul>
