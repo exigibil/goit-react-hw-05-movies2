@@ -13,7 +13,7 @@ function MovieDetails() {
   const [error, setError] = useState(null);
   const [showCast, setShowCast] = useState(false); 
   const [showReviews, setShowReviews] = useState(false);
- 
+
   const apiKey = API_KEY;
   const URL = baseURL;
 

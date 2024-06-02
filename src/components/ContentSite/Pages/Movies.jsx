@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchMovie from '../Movies/SearchMovie';
-import { useLocation, useNavigate } from "react-router-dom";
-
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Movies = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -16,7 +15,7 @@ const Movies = () => {
     if (userSearch) {
       setSearchQuery(userSearch);
     }
-  }, [location.search]);
+  }, [location]);
 
   const handleSearch = (query) => {
     setSearchQuery(query);
@@ -28,9 +27,7 @@ const Movies = () => {
       <Navbar />
       <div>
         <SearchBar onSearch={handleSearch} />
-        {searchQuery && (
-          <SearchMovie query={searchQuery} />
-        )}
+        {searchQuery && <SearchMovie query={searchQuery} />}
       </div>
     </div>
   );
