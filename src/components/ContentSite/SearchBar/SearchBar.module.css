@@ -75,7 +75,7 @@
         }
     
         .searchBarInput {
-          width: 90%;
+          width: 100%;
           padding-left: 5px;
           align-items: center;
           max-width: 600px;
